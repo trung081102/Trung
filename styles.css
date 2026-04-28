@@ -1,0 +1,152 @@
+:root {
+  --green: #10b981;
+  --green-dark: #0f766e;
+  --bg: #f7faf9;
+  --text: #0f172a;
+  --muted: #475569;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: var(--text);
+  background: white;
+  line-height: 1.6;
+}
+
+.container {
+  width: min(1080px, 92%);
+  margin: 0 auto;
+}
+
+.hero {
+  background: linear-gradient(120deg, rgba(16, 185, 129, 0.12), rgba(15, 118, 110, 0.2)),
+    url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1600&q=80")
+      center/cover;
+  color: white;
+  padding-bottom: 72px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.hero-content {
+  padding: 64px 0 20px;
+  max-width: 720px;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(15, 23, 42, 0.65);
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 3.2vw, 3rem);
+  margin: 12px 0;
+  line-height: 1.2;
+}
+
+.section {
+  padding: 70px 0;
+}
+
+.section-alt {
+  background: var(--bg);
+}
+
+h3 {
+  font-size: clamp(1.4rem, 2.8vw, 2rem);
+  margin-bottom: 14px;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+.cards,
+.packages {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.cards article,
+.packages article {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
+}
+
+.power {
+  color: var(--green-dark);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.calculator {
+  margin-top: 24px;
+  display: grid;
+  gap: 10px;
+  max-width: 420px;
+}
+
+input {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--green);
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #0da271;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid white;
+}
+
+.result {
+  margin-top: 18px;
+  padding: 14px;
+  border-radius: 12px;
+  background: #ecfeff;
+  border: 1px solid #a5f3fc;
+  color: #0f172a;
+  min-height: 52px;
+}
+
+.contact {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 26px 16px;
+  color: var(--muted);
+  border-top: 1px solid #e2e8f0;
+}

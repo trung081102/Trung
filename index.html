@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SolarViet - Giải pháp điện năng lượng mặt trời</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <h1>SolarViet</h1>
+        <a class="btn btn-outline" href="#tu-van">Tư vấn miễn phí</a>
+      </nav>
+      <div class="hero-content container">
+        <p class="badge">Năng lượng sạch cho tương lai</p>
+        <h2>Lắp đặt điện năng lượng mặt trời cho hộ gia đình & doanh nghiệp</h2>
+        <p>
+          Giảm hóa đơn điện mỗi tháng, vận hành ổn định và góp phần bảo vệ môi
+          trường.
+        </p>
+        <a class="btn" href="#uoc-tinh">Ước tính chi phí ngay</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="container section" id="loi-ich">
+        <h3>Vì sao chọn điện mặt trời?</h3>
+        <div class="grid cards">
+          <article>
+            <h4>Tiết kiệm lâu dài</h4>
+            <p>Giảm 40% - 80% tiền điện hàng tháng tùy theo nhu cầu sử dụng.</p>
+          </article>
+          <article>
+            <h4>Bền bỉ 25 năm</h4>
+            <p>
+              Tấm pin chất lượng cao, bảo hành dài hạn và hiệu suất ổn định theo
+              thời gian.
+            </p>
+          </article>
+          <article>
+            <h4>Tăng giá trị tài sản</h4>
+            <p>
+              Nhà ở và công trình có hệ thống năng lượng sạch thường được định giá
+              tốt hơn.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="goi-lap-dat">
+        <div class="container">
+          <h3>Các gói lắp đặt phổ biến</h3>
+          <div class="grid packages">
+            <article>
+              <h4>Gia đình cơ bản</h4>
+              <p class="power">3 kWp</p>
+              <p>Phù hợp hóa đơn điện khoảng 1.2 - 2 triệu/tháng.</p>
+            </article>
+            <article>
+              <h4>Gia đình nâng cao</h4>
+              <p class="power">5 kWp</p>
+              <p>Phù hợp hóa đơn điện khoảng 2 - 3.5 triệu/tháng.</p>
+            </article>
+            <article>
+              <h4>Doanh nghiệp nhỏ</h4>
+              <p class="power">10 kWp</p>
+              <p>Phù hợp cửa hàng, văn phòng, xưởng quy mô vừa.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section" id="uoc-tinh">
+        <h3>Ước tính hệ thống phù hợp</h3>
+        <p>
+          Nhập hóa đơn điện trung bình hàng tháng để xem công suất đề xuất và thời
+          gian hoàn vốn dự kiến.
+        </p>
+
+        <form id="solar-form" class="calculator">
+          <label for="bill">Hóa đơn điện (VNĐ / tháng)</label>
+          <input
+            id="bill"
+            name="bill"
+            type="number"
+            min="500000"
+            step="100000"
+            placeholder="Ví dụ: 2500000"
+            required
+          />
+          <button class="btn" type="submit">Tính ngay</button>
+        </form>
+
+        <div id="result" class="result" aria-live="polite"></div>
+      </section>
+
+      <section class="section section-alt" id="tu-van">
+        <div class="container contact">
+          <h3>Đăng ký tư vấn miễn phí</h3>
+          <p>Hotline: 0900 123 456 · Email: hello@solarviet.vn</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 SolarViet. Cùng bạn sử dụng năng lượng bền vững.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
